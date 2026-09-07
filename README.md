@@ -1,6 +1,6 @@
 # HLS-Based Cryptographic Accelerator Library for FPGA
 
-> **⚠️ Research and educational use only.** The accelerators in this
+> ** Research and educational use only.** The accelerators in this
 > repository were built to characterize and compare HLS-based cryptographic
 > hardware, not to serve as production-ready cryptographic implementations.
 > They have **not** undergone the side-channel analysis, constant-time
@@ -11,8 +11,8 @@
 > production system.**
 
 Characterization and comparative analysis of five cryptographic hardware
-accelerators — **AES-128**, **Serpent**, **ChaCha20**, **SHA-256**, and
-**SHA3-256** — implemented with High-Level Synthesis (Vitis HLS) and deployed
+accelerators (**AES-128**, **Serpent**, **ChaCha20**, **SHA-256**, and
+**SHA3-256**) implemented with High-Level Synthesis (Vitis HLS) and deployed
 on a **PYNQ-Z2** board (Zynq-7020, `xc7z020clg400-1`).
 
 ## Repository structure

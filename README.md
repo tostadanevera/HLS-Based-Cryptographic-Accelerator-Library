@@ -20,10 +20,10 @@ on a **PYNQ-Z2** board (Zynq-7020, `xc7z020clg400-1`).
 ```
 crypto_lib/
 |-- common/
-|   `-- types.h              # shared type aliases (u8, u32, u64)
+|   `-- types.h                        # shared type aliases (u8, u32, u64)
 |-- aes/
-|   |-- aes.h, aes.cpp        # core, verified independently in software
-|   |-- test_aes.cpp          # 18-vector KAT software testbench
+|   |-- aes.h, aes.cpp                 # core, verified independently in software
+|   |-- test_aes.cpp                   # 18-vector KAT software testbench
 |   `-- hls/
 |       |-- aes_top.h, aes_top.cpp     # AXI wrapper
 |       |-- test_aes_top.cpp           # HLS wrapper testbench
@@ -46,7 +46,7 @@ crypto_lib/
 
 ```bash
 make test          # builds and runs all 5 software testbenches
-make test-aes       # builds and runs a single algorithm's testbench
+make test-aes      # builds and runs a single algorithm's testbench
 make clean
 ```
 

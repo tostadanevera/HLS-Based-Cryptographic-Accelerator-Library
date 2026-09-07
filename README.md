@@ -40,6 +40,7 @@ crypto_lib/
 |-- hls/                               # config files
 |-- vivado/                            # final .bit/.hwh, config files
 `-- Makefile
+```
 
 ## Building and running the software testbenches
 
@@ -57,14 +58,7 @@ FIPS-197/SP 800-38A) before any hardware-specific work is attempted.
 
 1. Copy the algorithm's `.bit` and matching `.hwh` (same base filename, same
    directory) to the board.
-2. Run the corresponding driver from `drivers/`, e.g.:
-
-```python
-from aes_driver import AesAccel
-accel = AesAccel("aes128_bd_wrapper.bit")
-ciphertext = accel.encrypt(plaintext, key)
-```
-
+2. Run the corresponding driver from `drivers/`.
 3. Each algorithm also has a `*_verify.py` script that re-runs its test vectors
    directly on hardware.
 
@@ -137,5 +131,3 @@ in brief:
 - PYNQ image on the target board, with the `pynq` Python package
 - A C++17 compiler for the software testbenches (`g++`/`clang++`)
 - Python 3 with `cryptography` for cross-verification of the modes layer
-
-## License

@@ -1,6 +1,6 @@
 # HLS-Based Cryptographic Accelerator Library for FPGA
 
-> ** Research and educational use only.** The accelerators in this
+> **Research and educational use only.** The accelerators in this
 > repository were built to characterize and compare HLS-based cryptographic
 > hardware, not to serve as production-ready cryptographic implementations.
 > They have **not** undergone the side-channel analysis, constant-time
